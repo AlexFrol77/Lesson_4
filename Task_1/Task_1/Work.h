@@ -7,16 +7,9 @@ private:
 	int size;
 public:
 	AddressData* getArr() {
-		AddressData* Addr = new AddressData[size];
-		return Addr;
-	}
-	void setSize() {
 		std::ifstream fin("in.txt");
 		fin >> size;
-	}
-	void getAddr(AddressData* Addr) {
-		std::ifstream fin("in.txt");
-		fin.seekg(2);
+		AddressData* Addr = new AddressData[size];
 		for (int i = 0; i < size; i++) {
 			std::string TempStr;
 			int TempInt;
@@ -30,6 +23,7 @@ public:
 			Addr[i].setFlat(TempInt);
 		}
 		fin.close();
+		return Addr;
 	}
 	void revers(AddressData* Obj) {
 		for (int i = 0; i < size / 2; i++) {
