@@ -1,0 +1,6 @@
+*.exe
+*.vs
+*.filters
+*.user
+*.pdb
+x64
