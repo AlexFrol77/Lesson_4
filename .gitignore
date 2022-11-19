@@ -3,4 +3,6 @@
 *.filters
 *.user
 *.pdb
+.vscode
+*.json
 x64
