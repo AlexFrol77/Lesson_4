@@ -46,5 +46,8 @@ public:
 		}
 		fout.close();
 	}
+	void deleteArr(AddressData* Addr) {
+		delete[] Addr;
+	}
 };
 

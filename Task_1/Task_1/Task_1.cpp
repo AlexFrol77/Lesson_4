@@ -12,6 +12,7 @@ int main(int argc, char** argv) {
 	work.getAddr(Addr);
 	work.revers(Addr);
 	work.setOut(Addr);
+	work.deleteArr(Addr);
 
 	return 0;
 }
